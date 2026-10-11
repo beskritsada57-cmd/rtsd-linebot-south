@@ -426,8 +426,8 @@
           <span id="pendingUsersBadge" class="hidden px-1.5 py-0.5 rounded-full bg-amber-500 text-slate-900 text-[10px] font-bold animate-pulse">0</span>
         </button>
 
-        <!-- Broadcast LINE App Update Button -->
-        <button id="broadcastAppUpdateBtn" onclick="openBroadcastAppUpdateModal()" class="items-center gap-1.5 px-2.5 py-1 rounded-lg bg-emerald-600/30 hover:bg-emerald-600/50 text-emerald-300 border border-emerald-500/40 transition-all font-medium cursor-pointer shadow-md shadow-emerald-950/40 text-xs flex" title="ส่งข้อความแจ้งเตือนอัปเดตแอปพลิเคชันไปยังเพื่อนทุกคนใน LINE">
+        <!-- Broadcast LINE App Update Button (Hidden for South) -->
+        <button id="broadcastAppUpdateBtn" onclick="openBroadcastAppUpdateModal()" class="hidden items-center gap-1.5 px-2.5 py-1 rounded-lg bg-emerald-600/30 hover:bg-emerald-600/50 text-emerald-300 border border-emerald-500/40 transition-all font-medium cursor-pointer shadow-md shadow-emerald-950/40 text-xs" title="ส่งข้อความแจ้งเตือนอัปเดตแอปพลิเคชัน">
           <i class="fa-brands fa-line text-emerald-400 text-sm"></i>
           <span class="hidden sm:inline">แจ้งอัปเดตแอป (LINE)</span>
           <span class="sm:hidden">LINE Update</span>
@@ -478,13 +478,20 @@
           </div>
         </div>
 
-        <a href="https://line.me/R/ti/p/@411vtica" target="_blank" class="px-3 py-1 rounded-lg bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 transition-all flex items-center gap-1.5" title="เปิดแชท LINE Bot">
+        <!-- LINE Bot Button (Hidden for South) -->
+        <a href="https://line.me/R/ti/p/@411vtica" target="_blank" class="hidden px-3 py-1 rounded-lg bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 transition-all items-center gap-1.5" title="เปิดแชท LINE Bot">
           <i class="fa-brands fa-line text-base"></i>
           <span class="hidden sm:inline">LINE Bot</span>
         </a>
 
+        <!-- 🗺️ Mobile Map Shortcut Button -->
+        <a href="/map" target="_blank" class="px-3 py-1 rounded-lg bg-emerald-600/20 hover:bg-emerald-600/40 text-emerald-300 hover:text-white border border-emerald-500/40 transition-all flex items-center gap-1.5 text-xs font-semibold cursor-pointer shadow-sm" title="เปิดแผนที่สถานการณ์บนมือถือ">
+          <i class="fa-solid fa-map text-emerald-400 text-sm"></i>
+          <span class="hidden md:inline">แผนที่มือถือ</span>
+        </a>
+
         <!-- ❓ Quick User Guide Button -->
-        <button onclick="openUserGuideModal()" class="px-3 py-1 rounded-lg bg-sky-600/20 hover:bg-sky-600/40 text-sky-300 hover:text-white border border-sky-500/40 transition-all flex items-center gap-1.5 text-xs font-semibold cursor-pointer shadow-sm" title="เปิดคู่มือการใช้งานระบบฉบับย่อ">
+        <button onclick="openUserGuideModal()" class="px-3 py-1 rounded-lg bg-emerald-600/20 hover:bg-emerald-600/40 text-emerald-300 hover:text-white border border-emerald-500/40 transition-all flex items-center gap-1.5 text-xs font-semibold cursor-pointer shadow-sm" title="เปิดคู่มือการใช้งานระบบฉบับย่อ">
           <i class="fa-solid fa-circle-question text-emerald-400 text-sm"></i>
           <span class="hidden md:inline">คู่มือ</span>
         </button>
